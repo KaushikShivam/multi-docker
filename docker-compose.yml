@@ -4,3 +4,7 @@ services:
     image: 'postgres:latest'
   redis:
     image: 'redis:latest'
+  server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./server
