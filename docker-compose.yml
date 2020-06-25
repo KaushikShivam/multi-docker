@@ -28,7 +28,7 @@ services:
     volumes:
       - /app/node_modules
       - ./client:/app
-  workedr:
+  worker:
     build:
       dockerfile: Dockerfile.dev
       context: ./worker
